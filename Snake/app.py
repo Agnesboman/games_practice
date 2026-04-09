@@ -1,5 +1,13 @@
-import tkinter as tk
+from render import View
 
-root = tk.Tk()
-root.mainloop()
-    
+def initializeGame():
+    return renderStartView()
+
+def renderStartView():
+    v = View(300, 400)
+    return v.startView()
+def renderGameView():
+    return null
+
+if __name__ == "__main__":
+    initializeGame()

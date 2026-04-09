@@ -1,0 +1,35 @@
+
+### Notes for myself
+
+## Running the code
+
+In terminal, type:
+    python3 app.py
+
+## Github
+
+
+## Environment
+
+Make sure that the environment is activated before you try to dowload any packages.
+Once environemnt is activated in the outter folder, download packages should be no problem
+
+Create an environment for Linux:
+    python3 -m venv .venv
+
+Activate environment for Linux:
+    source .venv/bin/activate
+
+Install packages:
+pip install <package>
+
+Deactivate environment:
+deactivate
+
+## Progress notes
+
+9/4-2026
+so far, a start window is popping up when running app.py. I have a rectangle on my window
+# links:
+pySide6: 
+- https://www.pythonguis.com/pyside6-tutorial/
