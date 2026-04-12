@@ -7,6 +7,57 @@ In terminal, type:
     python3 app.py
 
 ## Github
+Opening the repo, always do git pull first
+
+Adding your changes to the work tree:
+1. git status # View the state of the repo
+2. git add <some-file> # Stage a file, if you want to add all write a . after add .
+3. git commit -m # Commit a file</some-file>, "message"
+
+Then, add your changes to the branch you are currently on:
+4. git pull (again, to make sure nobody else has pushed something new)
+5. git push
+
+Pushing everything on the branch into main branch:
+    git push origin main
+
+    overwriting conflict: 
+        git pull --rebase origin main
+    if:
+        "CONFLICT (content): Merge conflict in <some-file>"
+    then: 
+        git staus and edit files, then:
+            git add <some-file>
+            git rebase --continue
+
+            if "what the fuck am i doing this is wierd":
+                git rebase --abort
+
+Commit messages:
+"Fix: ..."
+"Remove:..."
+"Add:..."
+Always include what file you edited, what functions you created/removed/fixed. 
+Do not name anything silly, its supposed to ´be meaningfull and next person have to 
+understand what you wrote. This is for tracking progress and create notes on what chanhges
+did what in the tree. 
+
+### Branching
+have the branches short lived, no point in using them too long and keeping them away from the main
+one feature per branch, test feature before merging it
+
+- Main branch:
+Do not push anything here that is not working, keep this as clean as possible and only push in things that work.
+Its really important that all potential conflicts are resolved before you leave it. DO NOT walk
+away from any merge conflicts, fix them befor eyou forget. 
+
+- Rendering:
+Only things that has to do with rendering. Files you may edit on this branch: 
+- render.py
+- app.py
+- any factories that will have anything ot do with rendering
+- any text files
+
 
 
 ## Environment
@@ -33,3 +84,5 @@ so far, a start window is popping up when running app.py. I have a rectangle on 
 # links:
 pySide6: 
 - https://www.pythonguis.com/pyside6-tutorial/
+Github
+- https://www.atlassian.com/git/tutorials/comparing-workflows 
