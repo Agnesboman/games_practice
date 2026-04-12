@@ -84,5 +84,6 @@ so far, a start window is popping up when running app.py. I have a rectangle on 
 # links:
 pySide6: 
 - https://www.pythonguis.com/pyside6-tutorial/
+- https://doc.qt.io/qtforpython-6/gettingstarted.html#getting-started 
 Github
 - https://www.atlassian.com/git/tutorials/comparing-workflows 
